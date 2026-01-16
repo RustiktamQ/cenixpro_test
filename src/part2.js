@@ -24,7 +24,7 @@ const main = async () => {
     waitUntil: 'networkidle2',
   });
 
-  await sleep(3000);
+  await sleep(4000);
 
   const responsePromise = page.waitForResponse(
     (res) => res.url().includes(`/web/api/v1/catalog/category/${categoryId}`) && res.request().method() === 'POST',
